@@ -1,0 +1,85 @@
+.body-bg {
+    height: 513px;
+    width: 100%;
+    background-image: url(../../assets/img/background1.jpg);
+    background-size: cover;
+    background-position: top;
+    box-shadow: 0 5px 5px rgba(245, 3, 3, 0.3);
+
+}
+
+.header-menu {
+    box-shadow: 0 2px 5px rgba(255, 2, 2, 0.3);
+
+}
+
+.header-choose {
+    box-shadow: 0 12px 5px rgba(11, 11, 11, 0.3);
+
+}
+
+.button-search {
+    box-shadow: 0 12px 5px rgba(11, 11, 11, 0.3);
+}
+
+.menu li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 3;
+
+}
+
+/* CSS để biến input thành hình tròn */
+.round-checkbox input[type="checkbox"] {
+    display: none;
+    /* Ẩn input thật đi */
+}
+
+.round-checkbox label {
+    position: relative;
+    padding-left: 30px;
+    /* Điều chỉnh khoảng cách giữa checkbox và nội dung */
+    cursor: pointer;
+}
+
+.round-checkbox label:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #9d9c9899;
+    border-radius: 50%;
+}
+
+.round-checkbox input[type="checkbox"]:checked+label:before {
+    background: linear-gradient(to bottom, rgb(245, 127, 0), rgb(255, 251, 1));
+    border-color: #15457c;
+}
+
+.selected {
+    color: #15457c;
+    text-decoration: underline;
+}
+
+.selected1 {
+    color: red;
+    /* Màu chữ khi được chọn */
+    text-decoration: underline;
+    /* Gạch chân */
+}
+
+.sticky_header {
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 3px 3px 8px #ddd;
+    background: #fff;
+}
